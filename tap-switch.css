@@ -1,0 +1,39 @@
+input[type=checkbox].tap-switch {
+    --s: 90px;
+    /* control the size */
+
+    height: var(--s);
+    width: calc(2*var(--s));
+    border-radius: var(--s);
+    border: calc(var(--s)/10) solid #0000;
+    padding: calc(var(--s)/10);
+    background:
+        conic-gradient(#8FBE00 50%, #CC333F 0)
+        /* the colors here */
+        border-box var(--p, left)/200%;
+    -webkit-mask:
+        radial-gradient(50% 50%, #000 98%, #0000) no-repeat var(--p, left)/calc(3*var(--s)/5) content-box,
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: source-over, xor;
+    mask-composite: add, exclude;
+    transition: .5s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=checkbox].tap-switch:checked {
+    --p: right;
+}
+
+input[type=checkbox].tap-switch:disabled {
+    background: #948C75;
+    cursor: not-allowed;
+    --p: center;
+}
+
+input[type=checkbox].tap-switch:focus-visible {
+    border-color: #0009;
+}

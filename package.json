@@ -1,0 +1,19 @@
+{
+  "name": "@thenablyn/angularjs-tap-switch",
+  "version": "1.0.0-alpha",
+  "description": "A custom switch for AngularJS",
+  "author": "Pablo Picapietra",
+  "email": "ppicapietra@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppicapietra/angularjs-directive-tap-switch.git"
+  },
+  "engines": {
+    "node": ">= 0.8.4"
+  },
+  "license": "MIT",
+  "main": "./tap-switch.js",
+  "dependencies": {},
+  "devDependencies": {}
+}
+
