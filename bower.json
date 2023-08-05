@@ -7,7 +7,10 @@
   ],
   "homepage": "https://github.com/ppicapietra/angularjs-directive-tap-switch",
   "license": "MIT",
-  "main": "tap-switch.js",
+  "main": [
+    "./tap-switch.js",
+    "./tap-switch.css"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
