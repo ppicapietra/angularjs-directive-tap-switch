@@ -1,11 +1,4 @@
-/*
- * angucomplete-alt
- * Autocomplete directive for AngularJS
- * This is a fork of Daryl Rowland's angucomplete with some extra features.
- * By Hidenari Nozaki
- */
-
-/*! Copyright (c) 2014 Hidenari Nozaki and contributors | Licensed under the MIT license */
+/*! Copyright (c) 2023 Pablo Picapietra and contributors | Licensed under the MIT license */
 
 (function (root, factory) {
   'use strict';
@@ -19,7 +12,7 @@
     // Global Variables
     factory(root.angular);
   }
-}(window, function (angular) {
+}(this, function (angular) {
   'use strict';
 
   angular.module('tap-switch', []).directive('tapSwitch', ['$q', '$parse', '$http', '$sce', '$timeout', '$templateCache', '$interpolate', function ($q, $parse, $http, $sce, $timeout, $templateCache, $interpolate) {
@@ -61,5 +54,7 @@
       }
     };
   }]);
+
+  return 'tap-switch';
 
 }));
